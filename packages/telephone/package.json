@@ -1,0 +1,31 @@
+{
+  "name": "@sneas/telephone",
+  "version": "1.0.0",
+  "description": "The latest iPhone and Pixel frames provided as Web Components",
+  "homepage": "https://telephone.sneas.io",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "iphone",
+    "ios",
+    "android",
+    "pixel",
+    "frame",
+    "web-component"
+  ],
+  "scripts": {
+    "build": "esbuild src/iphone-16-max.ts src/pixel-9-pro.ts --outdir=./ --bundle --minify",
+    "prewatch": "npm run build",
+    "watch": "esbuild src/iphone-16-max.ts src/pixel-9-pro.ts --outdir=./ --bundle --minify --watch",
+    "start": "npm run watch",
+    "telephone": "npm start"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sneas/telephone.git"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}

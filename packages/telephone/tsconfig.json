@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./",
+    "module": "system",
+    "target": "es5",
+    "moduleResolution": "node",
+    "declaration": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": [],
+}
