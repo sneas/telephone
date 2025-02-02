@@ -20,7 +20,7 @@ module.exports = {
       {
         assets: ['package.json'],
         message:
-          'chore(release-img-comparison-slider): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+          'chore(telephone): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
   ],
