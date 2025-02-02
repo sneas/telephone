@@ -30,10 +30,14 @@
   <body>
     <div>
       <h1>Mobile phone mockup as a Web Component.</h1>
-      <p>Wrap any HTML/CSS/JS element with the tag<br /> <code>&#x3C;iphone-16-max&#x3E;&#x3C;/iphone-16-max&#x3E;</code> or<br /> <code>&#x3C;pixel-9-pro&#x3E;&#x3C;/pixel-9-pro&#x3E;</code><br />and it will be rendered inside a mobile phone frame.</p>
+      <p>Wrap any HTML/CSS/JS code with the <br /> <code>&#x3C;iphone-16-max&#x3E;&#x3C;/iphone-16-max&#x3E;</code> or<br /> <code>&#x3C;pixel-9-pro&#x3E;&#x3C;/pixel-9-pro&#x3E;</code><br />and it will be rendered inside a mobile phone frame.</p>
       <div class="">
         <x-ray>
           <code class="examples">
+            <script
+              defer
+              src="https://cdn.jsdelivr.net/npm/@sneas/telephone@1"
+            ></script>
             <style>
               .phone-content {
                 background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
