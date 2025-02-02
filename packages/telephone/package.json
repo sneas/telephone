@@ -2,7 +2,7 @@
   "name": "@sneas/telephone",
   "version": "1.0.0",
   "description": "The latest iPhone and Pixel frames provided as Web Components",
-  "homepage": "https://telephone.sneas.io",
+  "homepage": "https://sneas.github.io/telephone",
   "main": "index.js",
   "types": "index.d.ts",
   "keywords": [
@@ -24,6 +24,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sneas/telephone.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "esbuild": "^0.24.0"
