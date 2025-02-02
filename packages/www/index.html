@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telephone: mobile phone frame as a web component</title>
+    <title>Telephone: mobile phone mockup as a web component</title>
     <style>
       body {
         margin: 0;
@@ -14,7 +14,7 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        padding:1rem 2rem;
+        padding:0rem 2rem;
         box-sizing: content-box;
       }
 
@@ -26,60 +26,60 @@
     </style>
   </head>
   <body>
-    <h1 style="text-align: center;">Mobile phone frame as a web component.</h1>
+    <h1 style="text-align: center;">Mobile phone mockup as a Web Component.</h1>
     <div class="examples">
-    <iphone-16-max>
       <style>
-        .iphone-content {
-          background: linear-gradient(
-                  45deg,
-                  #0050ff,
-                  #5087ff,
-                  #58b3eb,
-                  #5087ff,
-                  #0050ff
-          );
+        .phone-content {
+          background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+          background-size: 400% 400%;
+          animation: gradient 5s ease infinite;
           height: 100%;
           display: flex;
+          flex-direction: column;
+          gap: 1rem;
           align-items: center;
           justify-content: center;
           padding: 1rem;
           text-align: center;
           color: #fff;
           box-sizing: border-box;
+
+          p {
+            font-weight: 500;
+            font-size: 1.2rem;
+            text-align: left;
+          }
+        }
+
+        @keyframes gradient {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
         }
       </style>
-      <div class="iphone-content">
-        This iPhone 16 Max frame is a<br />
-        Web Component.
-      </div>
-    </iphone-16-max>
-    <pixel-9-pro>
-      <style>
-        .pixel-content {
-          background: linear-gradient(
-                  45deg,
-                  #0050ff,
-                  #5087ff,
-                  #58b3eb,
-                  #5087ff,
-                  #0050ff
-          );
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 1rem;
-          text-align: center;
-          color: #fff;
-          box-sizing: border-box;
-        }
-      </style>
-      <div class="pixel-content">
-        This Pixel too.
-      </div>
-    </pixel-9-pro>
+      <iphone-16-max mode="dark">
+        <div class="phone-content">
+          <p>
+            Use this free<br />Web Component<br />to showcase a working mobile app on your website.
+          </p>
+        </div>
+      </iphone-16-max>
+      <pixel-9-pro mode="dark">
+        <div class="phone-content">
+          <a class="github-button"
+             href="https://github.com/sneas/telephone"
+             data-color-scheme="no-preference: light; light: dark; dark: dark;"
+             data-size="large" aria-label="View on GitHub">View on GitHub</a>
+        </div>
+      </pixel-9-pro>
     </div>
     <script type="module" src="/src/main.ts"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
