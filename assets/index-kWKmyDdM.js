@@ -238,6 +238,8 @@
 `,r=typeof window<"u"&&(window==null?void 0:window.HTMLElement),l=class extends r{constructor(){super();let o=document.createElement("style");o.innerHTML=`
       :host {
         display: inline-block;
+        pointer-events: none;
+
         --width: auto;
       }
 
@@ -253,6 +255,7 @@
         bottom: 2%;
         overflow: hidden;
         border-radius: calc(var(--width) * 0.126666666666667);
+        pointer-events: all;
       }
 
       .frame {
