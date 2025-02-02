@@ -10,6 +10,8 @@ export class HTMLPixel9ProElement extends HTMLElement {
     styleEl.innerHTML = `
       :host {
         display: inline-block;
+        pointer-events: none;
+
         --width: auto;
       }
 
@@ -25,6 +27,7 @@ export class HTMLPixel9ProElement extends HTMLElement {
         bottom: 2%;
         overflow: hidden;
         border-radius: calc(var(--width) * 0.126666666666667);
+        pointer-events: all;
       }
 
       .frame {
