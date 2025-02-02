@@ -26,58 +26,65 @@
     </style>
   </head>
   <body>
-    <h1 style="text-align: center;">Mobile phone mockup as a Web Component.</h1>
-    <div class="examples">
-      <style>
-        .phone-content {
-          background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-          background-size: 400% 400%;
-          animation: gradient 5s ease infinite;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          align-items: center;
-          justify-content: center;
-          padding: 1rem;
-          text-align: center;
-          color: #fff;
-          box-sizing: border-box;
+    <div>
+      <h1>Mobile phone mockup as a Web Component.</h1>
+      <p>This project began when I needed to showcase a mobile app in action on <a href="https://vocably.pro" target="_blank">its landing page</a>.</p>
+      <p>I was frustrated of taking and retaking videos and screenshots, so I animated needed pieces with HTML and CSS.</p>
+      <p>It turned out that HTML and CSS are much easier to maintain than Figma projects or videos.</p>
+      <div class="examples">
+        <style>
+          .phone-content {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            text-align: center;
+            color: #fff;
+            box-sizing: border-box;
 
-          p {
-            font-weight: 500;
-            font-size: 1.2rem;
-            text-align: left;
+            p {
+              font-weight: 500;
+              font-size: 1.2rem;
+              text-align: left;
+            }
           }
-        }
 
-        @keyframes gradient {
-          0% {
-            background-position: 0% 50%;
+          @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
           }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-      </style>
-      <iphone-16-max mode="dark">
-        <div class="phone-content">
-          <p>
-            Use this free<br />Web Component<br />to showcase a working iOS or Android app on your website.
-          </p>
-        </div>
-      </iphone-16-max>
-      <pixel-9-pro mode="dark">
-        <div class="phone-content">
-          <a class="github-button"
-             href="https://github.com/sneas/telephone"
-             data-color-scheme="no-preference: light; light: dark; dark: dark;"
-             data-size="large" aria-label="View on GitHub">View on GitHub</a>
-        </div>
-      </pixel-9-pro>
+        </style>
+        <iphone-16-max mode="dark">
+          <div class="phone-content">
+            <p>
+              Use this free<br />Web Component<br />to showcase a working iOS or Android app on your website.
+            </p>
+          </div>
+        </iphone-16-max>
+        <pixel-9-pro mode="dark">
+          <div class="phone-content">
+            <a class="github-button"
+               href="https://github.com/sneas/telephone"
+               data-color-scheme="no-preference: light; light: dark; dark: dark;"
+               data-size="large" aria-label="View on GitHub">View on GitHub</a>
+          </div>
+        </pixel-9-pro>
+      </div>
+      <p>
+        Created by <a href="https://github.com/sneas">sneas</a> in 2025 and freely distributed under the <a href="https://github.com/sneas/telephone/blob/main/LICENSE">MIT license</a>.</p>
     </div>
     <script type="module" src="/src/main.ts"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
