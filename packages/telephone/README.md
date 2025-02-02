@@ -10,7 +10,7 @@ Real world example: https://vocably.pro
 
 ## Installation
 
-```
+```html
 <script
   defer
   src="https://cdn.jsdelivr.net/npm/@sneas/telephone/iphone-16-max.js"
