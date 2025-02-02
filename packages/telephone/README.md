@@ -13,11 +13,11 @@ Real world example: https://vocably.pro
 ```html
 <script
   defer
-  src="https://cdn.jsdelivr.net/npm/@sneas/telephone/iphone-16-max.js"
+  src="https://cdn.jsdelivr.net/npm/@sneas/telephone@1/iphone-16-max.js"
 ></script>
 <script
   defer
-  src="https://cdn.jsdelivr.net/npm/@sneas/telephone/pixel-9-pro.js"
+  src="https://cdn.jsdelivr.net/npm/@sneas/telephone@1/pixel-9-pro.js"
 ></script>
 
 <iphone-16-max mode="light">
