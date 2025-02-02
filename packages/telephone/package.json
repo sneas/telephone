@@ -14,9 +14,10 @@
     "web-component"
   ],
   "scripts": {
-    "build": "esbuild src/iphone-16-max.ts src/pixel-9-pro.ts --outdir=./ --bundle --minify",
+    "build": "esbuild src/iphone-16-max.ts src/pixel-9-pro.ts src/index.ts --outdir=./ --bundle --minify",
+    "postbuild": "tsc --emitDeclarationOnly",
     "prewatch": "npm run build",
-    "watch": "esbuild src/iphone-16-max.ts src/pixel-9-pro.ts --outdir=./ --bundle --minify --watch",
+    "watch": "esbuild src/iphone-16-max.ts src/pixel-9-pro.ts src/index.ts --outdir=./ --bundle --minify --watch",
     "start": "npm run watch",
     "telephone": "npm start"
   },
