@@ -22,10 +22,10 @@ export class HTMLiPhone16MaxElement extends HTMLElement {
 
       .screenshot {
         position: absolute;
-        left: 3.49%;
-        right: 3.49%;
-        top: 1.39%;
-        bottom: 1.38%;
+        left: 3.4%;
+        right: 3.4%;
+        top: 1.32%;
+        bottom: 1.32%;
         overflow: hidden;
         border-radius: calc(var(--width) * 0.122126436781609);
         pointer-events: all;

@@ -22,9 +22,9 @@ export class HTMLPixel9ProElement extends HTMLElement {
       .screenshot {
         position: absolute;
         left: 4.1%;
-        right: 5%;
+        right: 4.8%;
         top: 2.05%;
-        bottom: 2%;
+        bottom: 1.8%;
         overflow: hidden;
         border-radius: calc(var(--width) * 0.126666666666667);
         pointer-events: all;
