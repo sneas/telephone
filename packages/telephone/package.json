@@ -1,6 +1,6 @@
 {
   "name": "@sneas/telephone",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The latest iPhone and Pixel frames provided as Web Components",
   "homepage": "https://sneas.github.io/telephone",
   "main": "index.js",
