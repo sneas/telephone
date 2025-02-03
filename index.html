@@ -23,6 +23,7 @@
         gap: 2rem;
         align-items: center;
         font-family: inherit;
+        flex-wrap: wrap;
       }
 
       .x-ray__code {
@@ -39,10 +40,31 @@
         padding: 1rem;
         color: #fff;
         box-sizing: border-box;
+      }
 
-        p {
-          font-weight: 500;
-          font-size: 1.2rem;
+      iphone-16-max {
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+
+      .button {
+        background-color: #0050ff;
+        color: #fff;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.5rem 1.5rem;
+        text-align: center;
+        transition: all 0.5s;
+        box-shadow: 0 3px 6px rgba(0, 80, 255, .25);
+        font-weight: 600;
+
+        &:hover {
+          background-color: #0040cc;
+          color: #fff;
+        }
+
+        &:active {
+          box-shadow: none;
         }
       }
     </style>
@@ -79,18 +101,12 @@
             </style>
             <iphone-16-max mode="dark">
               <div class="phone-content">
-                <p>
-                  Use this free<br />Web Component<br />to showcase a working iOS or Android app on your website.
-                </p>
+                Use this free<br />Web Component<br />to showcase a working iOS or Android app on your website.
               </div>
             </iphone-16-max>
             <pixel-9-pro mode="dark">
               <div class="phone-content">
-                <a class="github-button"
-                   href="https://github.com/sneas/telephone"
-                   data-color-scheme="no-preference: light; light: dark; dark: dark;"
-                   data-size="large" aria-label="View on GitHub"
-                >View on GitHub</a>
+                <a href="https://github.com/sneas/telephone" class="button">View on GitHub</a>
               </div>
             </pixel-9-pro>
           </code>
@@ -100,6 +116,5 @@
         Created by <a href="https://github.com/sneas">sneas</a> in 2025 and freely distributed under the <a href="https://github.com/sneas/telephone/blob/main/LICENSE">MIT license</a>.</p>
     </div>
 
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
