@@ -1,12 +1,20 @@
-# @sneas/telephone
+# @sneas/telephone - Web Component
 
-The latest iPhone and Pixel frames provided as Web Components.
+[![version](https://img.shields.io/npm/v/@sneas/telephone.svg?style=flat-square)](http://npm.im/@sneas/telephone)
+
+Wrap any HTML/CSS/JS code with the
+
+`<iphone-16-max></iphone-16-max>` or
+
+`<pixel-9-pro></pixel-9-pro>`
+
+and it will be rendered inside an SVG mobile phone frame.
+
+![Example](docs/example.png)
 
 Demo: https://sneas.github.io/telephone
 
 Real world example: https://vocably.pro
-
-![Example](docs/example.png)
 
 ## Installation
 
