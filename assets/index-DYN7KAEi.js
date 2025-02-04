@@ -295,7 +295,7 @@
         top: 0;
         line-height: 0;
       }
-    `;let o=this.attachShadow({mode:"open"});this.getAttribute("nonce")&&i.setAttribute("nonce",this.getAttribute("nonce"));let n=this.getAttribute("mode")??"light",r=p;n==="dark"&&(r=r.replace(/#0D0D0E/g,"#ffffff")),o.appendChild(i),o.innerHTML=o.innerHTML+r}connectedCallback(){new ResizeObserver(this.resetWidth.bind(this)).observe(this),this.resetWidth()}resetWidth(){this.style.setProperty("--width",`${this.clientWidth}px`)}};typeof window<"u"&&window.customElements.define("iphone-16-max",s);var a=`
+    `;let o=this.attachShadow({mode:"open"});this.getAttribute("nonce")&&i.setAttribute("nonce",this.getAttribute("nonce"));let n=this.getAttribute("mode")??"light",r=p;n==="dark"&&(r=r.replace(/#0D0D0E/g,"#ffffff")),o.appendChild(i),o.innerHTML=o.innerHTML+r}connectedCallback(){new ResizeObserver(this.resetWidth.bind(this)).observe(this),this.resetWidth(),this.setAttribute("rendered","")}resetWidth(){this.style.setProperty("--width",`${this.clientWidth}px`)}};typeof window<"u"&&window.customElements.define("iphone-16-max",s);var a=`
 <div class="container">
   <div class="screenshot">
     <slot />
@@ -561,4 +561,4 @@
         top: 0;
         line-height: 0;
       }
-    `;let o=this.attachShadow({mode:"open"});this.getAttribute("nonce")&&i.setAttribute("nonce",this.getAttribute("nonce"));let n=this.getAttribute("mode")??"light",r=a;n==="dark"&&(r=r.replace(/#222227/g,"#ffffff")),o.appendChild(i),o.innerHTML=o.innerHTML+r}connectedCallback(){new ResizeObserver(this.resetWidth.bind(this)).observe(this),this.resetWidth()}resetWidth(){this.style.setProperty("--width",`${this.clientWidth}px`)}};typeof window<"u"&&window.customElements.define("pixel-9-pro",e)})();
+    `;let o=this.attachShadow({mode:"open"});this.getAttribute("nonce")&&i.setAttribute("nonce",this.getAttribute("nonce"));let n=this.getAttribute("mode")??"light",r=a;n==="dark"&&(r=r.replace(/#222227/g,"#ffffff")),o.appendChild(i),o.innerHTML=o.innerHTML+r}connectedCallback(){new ResizeObserver(this.resetWidth.bind(this)).observe(this),this.resetWidth(),this.setAttribute("rendered","")}resetWidth(){this.style.setProperty("--width",`${this.clientWidth}px`)}};typeof window<"u"&&window.customElements.define("pixel-9-pro",e)})();
