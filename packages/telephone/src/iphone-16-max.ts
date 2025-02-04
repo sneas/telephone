@@ -60,6 +60,7 @@ export class HTMLiPhone16MaxElement extends HTMLElement {
     const resizeObserver = new ResizeObserver(this.resetWidth.bind(this));
     resizeObserver.observe(this);
     this.resetWidth();
+    this.setAttribute('rendered', '');
   }
 
   private resetWidth() {

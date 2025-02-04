@@ -20,7 +20,7 @@
 
       .examples {
         display: flex;
-        gap: 2rem;
+        gap: 1.5rem;
         align-items: center;
         font-family: inherit;
         flex-wrap: wrap;
@@ -65,6 +65,16 @@
 
         &:active {
           box-shadow: none;
+        }
+      }
+
+      iphone-16-max, pixel-9-pro {
+        & * {
+          visibility: hidden;
+        }
+
+        &[rendered] * {
+          visibility: visible;
         }
       }
     </style>
