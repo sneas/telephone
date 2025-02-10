@@ -1,130 +1,155 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/telephone/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telephone: mobile phone mockup as a web component</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        padding: 0rem 2rem;
-        box-sizing: content-box;
-      }
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/x-icon" href="/telephone/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telephone: mobile phone mockup as a web component</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 0rem 2rem;
+      box-sizing: content-box;
+    }
 
-      .examples {
-        display: flex;
-        gap: 1.5rem;
-        align-items: center;
-        font-family: inherit;
-        flex-wrap: wrap;
-      }
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-      .x-ray__code {
-        max-width: 80vw;
-        overflow: scroll;
-      }
+    footer {
+      padding: 2rem;
+      background-color: #fbfbfb;
+      width: 100%;
+      text-align: center;
+      font-size: 0.875rem;
+    }
 
-      .phone-content {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
+    .examples {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      font-family: inherit;
+      flex-wrap: wrap;
+    }
+
+    .x-ray__code-previewer {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .x-ray__code {
+      max-width: 80vw;
+      overflow: scroll;
+      text-align: left;
+    }
+
+    .phone-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      color: #fff;
+      box-sizing: border-box;
+    }
+
+    iphone-16-max {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    .button {
+      background-color: #0050ff;
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.5rem 1.5rem;
+      text-align: center;
+      transition: all 0.5s;
+      box-shadow: 0 3px 6px rgba(0, 80, 255, .25);
+      font-weight: 600;
+
+      &:hover {
+        background-color: #0040cc;
         color: #fff;
-        box-sizing: border-box;
       }
 
-      iphone-16-max {
-        font-weight: 500;
-        font-size: 1.2rem;
+      &:active {
+        box-shadow: none;
+      }
+    }
+
+    iphone-16-max, pixel-9-pro {
+      & * {
+        visibility: hidden;
       }
 
-      .button {
-        background-color: #0050ff;
-        color: #fff;
-        border: none;
-        border-radius: 2rem;
-        padding: 0.5rem 1.5rem;
-        text-align: center;
-        transition: all 0.5s;
-        box-shadow: 0 3px 6px rgba(0, 80, 255, .25);
-        font-weight: 600;
-
-        &:hover {
-          background-color: #0040cc;
-          color: #fff;
-        }
-
-        &:active {
-          box-shadow: none;
-        }
+      &[rendered] * {
+        visibility: visible;
       }
+    }
+  </style>
+  <script defer src="https://unpkg.com/@sneas/x-ray@3/dist/index.js"></script>
+  <script type="module" crossorigin src="/telephone/assets/index-DYN7KAEi.js"></script>
+  <link rel="stylesheet" crossorigin href="/telephone/assets/index-DNaEyVgp.css">
+</head>
+<body>
+<main>
+  <h1>Mobile phone mockup as a Web Component.</h1>
+  <p>Wrap any HTML/CSS/JS code with the <br/> <code>&#x3C;iphone-16-max&#x3E;&#x3C;/iphone-16-max&#x3E;</code> or<br/>
+    <code>&#x3C;pixel-9-pro&#x3E;&#x3C;/pixel-9-pro&#x3E;</code><br/>and it will be rendered inside an SVG mobile
+    phone frame.</p>
+  <div class="">
+    <x-ray>
+      <code class="examples">
+        <style>
+          .phone-content {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
+            height: 100%;
+          }
 
-      iphone-16-max, pixel-9-pro {
-        & * {
-          visibility: hidden;
-        }
+          @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+        </style>
+        <iphone-16-max mode="dark">
+          <div class="phone-content">
+            Use this free<br/>Web Component<br/>to showcase a working iOS or Android app on your website.
+          </div>
+        </iphone-16-max>
+        <pixel-9-pro mode="dark">
+          <div class="phone-content">
+            <a href="https://github.com/sneas/telephone" class="button">View on GitHub</a>
+          </div>
+        </pixel-9-pro>
+      </code>
+    </x-ray>
+  </div>
+</main>
+<footer>
+  Created by <a href="https://github.com/sneas">sneas</a> in 2025 and freely distributed under the <a
+  href="https://github.com/sneas/telephone/blob/main/LICENSE">MIT license</a>.
+</footer>
 
-        &[rendered] * {
-          visibility: visible;
-        }
-      }
-    </style>
-    <script defer src="https://unpkg.com/@sneas/x-ray@3/dist/index.js"></script>
-    <script type="module" crossorigin src="/telephone/assets/index-DYN7KAEi.js"></script>
-    <link rel="stylesheet" crossorigin href="/telephone/assets/index-DNaEyVgp.css">
-  </head>
-  <body>
-    <div>
-      <h1>Mobile phone mockup as a Web Component.</h1>
-      <p>Wrap any HTML/CSS/JS code with the <br /> <code>&#x3C;iphone-16-max&#x3E;&#x3C;/iphone-16-max&#x3E;</code> or<br /> <code>&#x3C;pixel-9-pro&#x3E;&#x3C;/pixel-9-pro&#x3E;</code><br />and it will be rendered inside an SVG mobile phone frame.</p>
-      <div class="">
-        <x-ray>
-          <code class="examples">
-            <style>
-              .phone-content {
-                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-                background-size: 400% 400%;
-                animation: gradient 5s ease infinite;
-                height: 100%;
-              }
-
-              @keyframes gradient {
-                0% {
-                  background-position: 0% 50%;
-                }
-                50% {
-                  background-position: 100% 50%;
-                }
-                100% {
-                  background-position: 0% 50%;
-                }
-              }
-            </style>
-            <iphone-16-max mode="dark">
-              <div class="phone-content">
-                Use this free<br />Web Component<br />to showcase a working iOS or Android app on your website.
-              </div>
-            </iphone-16-max>
-            <pixel-9-pro mode="dark">
-              <div class="phone-content">
-                <a href="https://github.com/sneas/telephone" class="button">View on GitHub</a>
-              </div>
-            </pixel-9-pro>
-          </code>
-        </x-ray>
-      </div>
-      <p>
-        Created by <a href="https://github.com/sneas">sneas</a> in 2025 and freely distributed under the <a href="https://github.com/sneas/telephone/blob/main/LICENSE">MIT license</a>.</p>
-    </div>
-
-  </body>
+</body>
 </html>
