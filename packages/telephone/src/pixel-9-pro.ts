@@ -67,6 +67,6 @@ export class HTMLPixel9ProElement extends HTMLElement {
   }
 }
 
-if (typeof window !== 'undefined') {
+if (typeof window !== 'undefined' && !window.customElements.get('pixel-9-pro')) {
   window.customElements.define('pixel-9-pro', HTMLPixel9ProElement);
 }

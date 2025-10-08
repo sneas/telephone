@@ -68,6 +68,6 @@ export class HTMLiPhone16MaxElement extends HTMLElement {
   }
 }
 
-if (typeof window !== 'undefined') {
+if (typeof window !== 'undefined' && !window.customElements.get('iphone-16-max')) {
   window.customElements.define('iphone-16-max', HTMLiPhone16MaxElement);
 }
