@@ -14,10 +14,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 200;
   color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #747bff;
+  text-decoration: none;
 }
