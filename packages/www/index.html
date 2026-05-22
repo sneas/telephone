@@ -55,7 +55,7 @@
       box-sizing: border-box;
     }
 
-    iphone-16-max {
+    .device {
       font-weight: 200;
       font-size: 1.6rem;
 
@@ -65,6 +65,10 @@
         p {
           margin: 0;
           margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -188,15 +192,15 @@
             }
           }
         </style>
-        <iphone-16-max mode="dark">
+        <iphone-16-max mode="dark" class="device">
           <div class="phone-content">
             <p>Use this free<br/>Web Component<br/>to showcase a working iOS or Android app on your website.</p>
             <p style="font-size: 80%;">This text is &lt;html&gt;.</p>
           </div>
         </iphone-16-max>
-        <pixel-9-pro mode="dark">
-          <div class="phone-content">
-            <a href="https://github.com/sneas/telephone" class="button">View on GitHub</a>
+        <pixel-9-pro mode="dark" class="device">
+          <div class="phone-content" id="android-content">
+            <a  style="align-self: center; font-size: 1.1rem;" href="https://github.com/sneas/telephone" class="button">View on GitHub</a>
           </div>
         </pixel-9-pro>
       </code>
