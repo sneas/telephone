@@ -1,6 +1,9 @@
 # @sneas/telephone - Web Component
 
+<img src="packages/www/public/telephone.svg" alt="Description" height="60">
+
 [![version](https://img.shields.io/npm/v/@sneas/telephone.svg?style=flat-square)](http://npm.im/@sneas/telephone)
+[![](https://img.shields.io/jsdelivr/npm/hm/@sneas/telephone?style=flat-square&color=blue&label=jsDelivr)](https://www.jsdelivr.com/package/npm/@sneas/telephone)
 
 Wrap any HTML/CSS/JS code with the
 
