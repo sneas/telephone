@@ -3,3 +3,4 @@ pixel-9-pro.*
 index.js
 index.d.ts
 node_modules
+/ipad-air-13.*
