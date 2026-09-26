@@ -20,6 +20,20 @@ export class HTMLiPadAir13Element extends HTMLElement {
         position: relative;
       }
 
+      /* Opaque backing slightly larger than the display cut-out: the
+         antialiased edges of the screenshot and the frame overlap without
+         letting the page background bleed through at the rounded corners. */
+      .container::before {
+        content: '';
+        position: absolute;
+        left: 4.2725%;
+        right: 4.2725%;
+        top: 3.1915%;
+        bottom: 3.1915%;
+        border-radius: calc(var(--width) * 0.018475750577367);
+        background: #000;
+      }
+
       .screenshot {
         position: absolute;
         left: 4.5035%;
