@@ -21,12 +21,12 @@ export class HTMLAndroidTabletElement extends HTMLElement {
 
       .screenshot {
         position: absolute;
-        left: 3.588%;
-        right: 3.8194%;
-        top: 2.31%;
-        bottom: 2.31%;
+        left: 3.4722%;
+        right: 3.7037%;
+        top: 2.2355%;
+        bottom: 2.2355%;
         overflow: hidden;
-        border-radius: calc(var(--width) * 0.013888888888889);
+        border-radius: calc(var(--width) * 0.015046296296296);
         pointer-events: all;
       }
 
