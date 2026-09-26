@@ -11,7 +11,9 @@ Wrap any HTML/CSS/JS code with the
 
 `<pixel-9-pro></pixel-9-pro>` or
 
-`<ipad-air-13></ipad-air-13>`
+`<ipad-air-13></ipad-air-13>` or
+
+`<android-tablet></android-tablet>`
 
 and it will be rendered inside an SVG device frame.
 
@@ -36,6 +38,10 @@ Real world example: https://vocably.pro
   defer
   src="https://cdn.jsdelivr.net/npm/@sneas/telephone@1/ipad-air-13.js"
 ></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/@sneas/telephone@1/android-tablet.js"
+></script>
 
 <iphone-16-max mode="light">
   iPhone content goes here.
@@ -50,4 +56,8 @@ Real world example: https://vocably.pro
 <ipad-air-13 mode="light">
   iPad Air 13" content goes here.
 </ipad-air-13>
+
+<android-tablet mode="light">
+  Android tablet content goes here.
+</android-tablet>
 ```

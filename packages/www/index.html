@@ -106,7 +106,7 @@
       }
     }
 
-    iphone-16-max, pixel-9-pro {
+    iphone-16-max, pixel-9-pro, ipad-air-13, android-tablet {
       & * {
         visibility: hidden;
       }
@@ -213,12 +213,31 @@
       </code>
     </x-ray>
   </div>
+  <div style="display: flex; justify-content: center;">
+    <x-ray>
+      <code class="examples">
+        <ipad-air-13 mode="dark" class="device" style="width: 640px; max-width: 100%;">
+          <div class="phone-content">
+            <p>Showcase your iPad app<br/>in an iPad Air 13" frame.</p>
+            <p style="font-size: 80%;">This text is &lt;html&gt; too.</p>
+          </div>
+        </ipad-air-13>
+        <android-tablet mode="dark" class="device" style="width: 600px; max-width: 100%;">
+          <div class="phone-content">
+            <p>Or your Android app<br/>in a generic Android tablet frame.</p>
+            <p style="font-size: 80%;">This text is &lt;html&gt; too.</p>
+          </div>
+        </android-tablet>
+      </code>
+    </x-ray>
+  </div>
   <div class="colorful-wrapper" style="background-color: #00B2D2;">
     <div class="container">
       <div>
       Wrap any HTML/CSS/JS code with the <br/> <code>&#x3C;iphone-16-max&#x3E;&#x3C;/iphone-16-max&#x3E;</code> or<br/>
-      <code>&#x3C;pixel-9-pro&#x3E;&#x3C;/pixel-9-pro&#x3E;</code><br/>and it will be rendered inside an SVG mobile
-      phone frame.
+      <code>&#x3C;pixel-9-pro&#x3E;&#x3C;/pixel-9-pro&#x3E;</code> or<br/>
+      <code>&#x3C;ipad-air-13&#x3E;&#x3C;/ipad-air-13&#x3E;</code> or<br/>
+      <code>&#x3C;android-tablet&#x3E;&#x3C;/android-tablet&#x3E;</code><br/>and it will be rendered inside an SVG device frame.
       </div>
     </div>
   </div>
