@@ -561,7 +561,201 @@
         top: 0;
         line-height: 0;
       }
-    `;let t=this.attachShadow({mode:`open`});this.getAttribute(`nonce`)&&e.setAttribute(`nonce`,this.getAttribute(`nonce`));let r=this.getAttribute(`mode`)??`light`,i=n;r===`dark`&&(i=i.replace(/#222227/g,`#ffffff`)),t.appendChild(e),t.innerHTML+=i}connectedCallback(){new ResizeObserver(this.resetWidth.bind(this)).observe(this),this.resetWidth(),this.setAttribute(`rendered`,``)}resetWidth(){this.style.setProperty(`--width`,`${this.clientWidth}px`)}};typeof window<`u`&&window.customElements&&!window.customElements.get(`pixel-9-pro`)&&window.customElements.define(`pixel-9-pro`,i)})();var e=`<p>This component draws a smartphone frame around any HTML.</p>`;document.body.addEventListener(`keydown`,t=>{if(t.key!==`f`)return;let n=document.getElementById(`android-content`);if(!n)return;let r=n.innerHTML;n.innerHTML=e,e=r,t.preventDefault()},!1),(()=>{var e={800:(e,t,n)=>{n.d(t,{Z:()=>s});var r=n(15),i=n.n(r),a=n(645),o=n.n(a)()(i());o.push([e.id,`pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1e1e1e;color:#dcdcdc}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-symbol{color:#569cd6}.hljs-link{color:#569cd6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4ec9b0}.hljs-class,.hljs-number{color:#b8d7a3}.hljs-meta .hljs-string,.hljs-string{color:#d69d85}.hljs-regexp,.hljs-template-tag{color:#9a5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#dcdcdc}.hljs-comment,.hljs-quote{color:#57a64a;font-style:italic}.hljs-doctag{color:#608b4e}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-tag{color:#9b9b9b}.hljs-template-variable,.hljs-variable{color:#bd63c5}.hljs-attr,.hljs-attribute{color:#9cdcfe}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#d7ba7d}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}.x-ray__toggle{cursor:pointer}.x-ray__toggle:before{content:" ";display:inline-block;border-top:5px solid rgba(0,0,0,0);border-bottom:5px solid rgba(0,0,0,0);border-left:5px solid currentColor;vertical-align:middle;margin-right:.7rem;transform:translate(5px, -1px);transition:transform .2s ease-out}.x-ray__toggle.x-ray__toggle--active:before{transform:rotate(90deg) translate(-1px, -4px)}.x-ray__code-container{max-height:0;overflow:hidden;transition:max-height .2s ease-out}.x-ray__code-container--visible{max-height:1000px;transition:max-height .15s ease-in}.x-ray__code{margin-bottom:0;padding:7px}`,``,{version:3,sources:[`webpack://./node_modules/highlight.js/scss/vs2015.scss`,`webpack://./src/index.scss`],names:[],mappings:`AAAA,cAAA,aAAA,CAAA,eAAA,CAAA,WAAA,CAAA,UAAA,eAAA,CAAA,MAAA,kBAAA,CAAA,aAAA,CAAA,oDAAA,aAAA,CAAA,WAAA,aAAA,CAAA,yBAAA,CAAA,0BAAA,aAAA,CAAA,yBAAA,aAAA,CAAA,qCAAA,aAAA,CAAA,gCAAA,aAAA,CAAA,kEAAA,aAAA,CAAA,0BAAA,aAAA,CAAA,iBAAA,CAAA,aAAA,aAAA,CAAA,8CAAA,aAAA,CAAA,uCAAA,aAAA,CAAA,2BAAA,aAAA,CAAA,cAAA,UAAA,CAAA,eAAA,iBAAA,CAAA,aAAA,eAAA,CAAA,iHAAA,aAAA,CAAA,eAAA,wBAAA,CAAA,oBAAA,CAAA,UAAA,CAAA,eAAA,qBAAA,CAAA,oBAAA,CAAA,UAAA,CCEA,eACE,cAAA,CAEA,sBACE,WAAA,CACA,oBAAA,CAEA,kCAAA,CACA,qCAAA,CACA,kCAAA,CAEA,qBAAA,CACA,kBAAA,CACA,8BAAA,CAEA,iCAAA,CAIA,4CACE,6CAAA,CAKN,uBACE,YAAA,CACA,eAAA,CACA,kCAAA,CAGF,gCACE,iBAAA,CACA,kCAAA,CAGF,aACE,eAAA,CACA,WAAA`,sourcesContent:[`pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1e1e1e;color:#dcdcdc}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-symbol{color:#569cd6}.hljs-link{color:#569cd6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4ec9b0}.hljs-class,.hljs-number{color:#b8d7a3}.hljs-meta .hljs-string,.hljs-string{color:#d69d85}.hljs-regexp,.hljs-template-tag{color:#9a5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#dcdcdc}.hljs-comment,.hljs-quote{color:#57a64a;font-style:italic}.hljs-doctag{color:#608b4e}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-tag{color:#9b9b9b}.hljs-template-variable,.hljs-variable{color:#bd63c5}.hljs-attr,.hljs-attribute{color:#9cdcfe}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#d7ba7d}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}`,`@import '~highlight.js/scss/vs2015';
+    `;let t=this.attachShadow({mode:`open`});this.getAttribute(`nonce`)&&e.setAttribute(`nonce`,this.getAttribute(`nonce`));let r=this.getAttribute(`mode`)??`light`,i=n;r===`dark`&&(i=i.replace(/#222227/g,`#ffffff`)),t.appendChild(e),t.innerHTML+=i}connectedCallback(){new ResizeObserver(this.resetWidth.bind(this)).observe(this),this.resetWidth(),this.setAttribute(`rendered`,``)}resetWidth(){this.style.setProperty(`--width`,`${this.clientWidth}px`)}};typeof window<`u`&&window.customElements&&!window.customElements.get(`pixel-9-pro`)&&window.customElements.define(`pixel-9-pro`,i);var a=`
+<div class="container">
+  <div class="screenshot">
+    <slot />
+  </div>
+  <div class="frame">
+    <svg width="100%" viewBox="0 0 866 1128" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Top button (Touch ID) -->
+    <rect x="700" y="0" width="72" height="8" rx="2.5" fill="url(#ipad_button_h)"/>
+    <rect x="701" y="0.6" width="70" height="1" rx="0.5" fill="white" fill-opacity="0.45"/>
+    <!-- Volume buttons -->
+    <rect x="858" y="150" width="8" height="54" rx="2.5" fill="url(#ipad_button_v)"/>
+    <rect x="858" y="214" width="8" height="54" rx="2.5" fill="url(#ipad_button_v)"/>
+    <rect x="864.4" y="151" width="1" height="52" rx="0.5" fill="white" fill-opacity="0.35"/>
+    <rect x="864.4" y="215" width="1" height="52" rx="0.5" fill="white" fill-opacity="0.35"/>
+    <!-- Aluminium enclosure -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M53 3C25.3858 3 3 25.3858 3 53V1075C3 1102.61 25.3858 1125 53 1125H813C840.614 1125 863 1102.61 863 1075V53C863 25.3858 840.614 3 813 3H53ZM53 38C45.268 38 39 44.268 39 52V1076C39 1083.73 45.268 1090 53 1090H813C820.732 1090 827 1083.73 827 1076V52C827 44.268 820.732 38 813 38H53Z" fill="url(#ipad_body)"/>
+    <g filter="url(#ipad_blur1)">
+      <rect x="4" y="4" width="858" height="1120" rx="49" stroke="#2A2A2C" stroke-width="1.2"/>
+    </g>
+    <g filter="url(#ipad_blur05)">
+      <rect x="5.2" y="5.2" width="855.6" height="1117.6" rx="47.8" stroke="white" stroke-opacity="0.55" stroke-width="1"/>
+    </g>
+    <!-- Front glass with display cut-out -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M53 7C27.5949 7 7 27.5949 7 53V1075C7 1100.41 27.5949 1121 53 1121H813C838.405 1121 859 1100.41 859 1075V53C859 27.5949 838.405 7 813 7H53ZM53 38C45.268 38 39 44.268 39 52V1076C39 1083.73 45.268 1090 53 1090H813C820.732 1090 827 1083.73 827 1076V52C827 44.268 820.732 38 813 38H53Z" fill="#060607"/>
+    <rect x="7.5" y="7.5" width="851" height="1113" rx="45.5" stroke="#1F1F22" stroke-width="1"/>
+    <rect x="8.4" y="8.4" width="849.2" height="1111.2" rx="44.6" stroke="white" stroke-opacity="0.07" stroke-width="0.8"/>
+    <rect x="38.5" y="37.5" width="789" height="1053" rx="14.5" stroke="#000000" stroke-width="1"/>
+    <!-- Front camera (landscape edge) -->
+    <circle cx="845" cy="564" r="5.6" fill="#0E0B0F"/>
+    <circle cx="845" cy="564" r="3.4" fill="#161424"/>
+    <circle cx="845" cy="564" r="2" fill="#0F0F2A"/>
+    <circle cx="845" cy="563.3" r="0.7" fill="#393752"/>
+    <circle cx="845" cy="590" r="1.6" fill="#0B0B0D"/>
+    <!-- Status bar -->
+    <text x="54" y="51" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#0D0D0E">9:41<tspan dx="5" font-weight="500">Tue Jan 9</tspan></text>
+    <g transform="translate(521.3 16.2) scale(0.8)">
+    <path opacity="0.35" d="M340 33.5275H357C358.918 33.5275 360.472 35.0822 360.472 37V42C360.472 43.9178 358.918 45.4725 357 45.4725H340C338.082 45.4725 336.528 43.9178 336.528 42V37C336.528 35.0822 338.082 33.5275 340 33.5275Z" stroke="#0D0D0E" stroke-width="1.05509"/>
+    <path opacity="0.4" d="M362 38V42.2203C362.849 41.8629 363.401 41.0314 363.401 40.1102C363.401 39.1889 362.849 38.3574 362 38" fill="#0D0D0E"/>
+    <path d="M338 37C338 35.8954 338.895 35 340 35H357C358.105 35 359 35.8954 359 37V42C359 43.1046 358.105 44 357 44H340C338.895 44 338 43.1046 338 42V37Z" fill="#0D0D0E"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M321.5 35.5875C323.967 35.5876 326.339 36.5551 328.127 38.2898C328.261 38.4237 328.477 38.4221 328.609 38.286L329.896 36.9605C329.963 36.8915 330.001 36.798 330 36.7008C329.999 36.6035 329.961 36.5105 329.893 36.4423C325.201 31.8526 317.799 31.8526 313.107 36.4423C313.039 36.5105 313.001 36.6034 313 36.7007C312.999 36.7979 313.037 36.8914 313.104 36.9605L314.391 38.286C314.523 38.4223 314.739 38.424 314.873 38.2898C316.661 36.5549 319.034 35.5875 321.5 35.5875ZM321.536 39.6724C322.891 39.6723 324.198 40.1864 325.203 41.115C325.338 41.2467 325.552 41.2439 325.685 41.1085L326.97 39.7829C327.038 39.7134 327.075 39.6191 327.074 39.5211C327.073 39.4231 327.034 39.3295 326.965 39.2614C323.906 36.3568 319.169 36.3568 316.109 39.2614C316.04 39.3295 316.001 39.4231 316 39.5212C315.999 39.6192 316.037 39.7135 316.105 39.7829L317.39 41.1085C317.522 41.2439 317.736 41.2467 317.872 41.115C318.876 40.1871 320.182 39.6729 321.536 39.6724ZM324.15 42.3427C324.152 42.441 324.114 42.5357 324.045 42.6046L321.822 44.8948C321.756 44.9621 321.668 45 321.575 45C321.482 45 321.393 44.9621 321.328 44.8948L319.105 42.6046C319.036 42.5357 318.998 42.4409 319 42.3426C319.002 42.2443 319.044 42.1512 319.115 42.0853C320.535 40.8595 322.615 40.8595 324.035 42.0853C324.106 42.1513 324.148 42.2444 324.15 42.3427Z" fill="#0D0D0E"/>
+    </g>
+    <defs>
+    <linearGradient id="ipad_body" x1="3" y1="3" x2="863" y2="1125" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#9A9B9F"/>
+    <stop offset="0.35" stop-color="#6E6F73"/>
+    <stop offset="0.65" stop-color="#7C7D81"/>
+    <stop offset="1" stop-color="#58595C"/>
+    </linearGradient>
+    <linearGradient id="ipad_button_h" x1="736" y1="0" x2="736" y2="8" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#A9AAAE"/>
+    <stop offset="0.5" stop-color="#6A6B6F"/>
+    <stop offset="1" stop-color="#3E3F42"/>
+    </linearGradient>
+    <linearGradient id="ipad_button_v" x1="866" y1="0" x2="858" y2="0" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#A9AAAE"/>
+    <stop offset="0.5" stop-color="#6A6B6F"/>
+    <stop offset="1" stop-color="#3E3F42"/>
+    </linearGradient>
+    <filter id="ipad_blur1" x="0" y="0" width="866" height="1128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feGaussianBlur stdDeviation="1"/>
+    </filter>
+    <filter id="ipad_blur05" x="0" y="0" width="866" height="1128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feGaussianBlur stdDeviation="0.5"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+</div>
+`,o=typeof window<`u`&&window?.HTMLElement,s=class extends o{constructor(){super();let e=document.createElement(`style`);e.innerHTML=`
+      :host {
+        display: inline-block;
+        pointer-events: none;
+
+        --width: auto;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      /* Opaque backing slightly larger than the display cut-out: the
+         antialiased edges of the screenshot and the frame overlap without
+         letting the page background bleed through at the rounded corners. */
+      .container::before {
+        content: '';
+        position: absolute;
+        left: 4.2725%;
+        right: 4.2725%;
+        top: 3.1915%;
+        bottom: 3.1915%;
+        border-radius: calc(var(--width) * 0.018475750577367);
+        background: #000;
+      }
+
+      .screenshot {
+        position: absolute;
+        left: 4.5035%;
+        right: 4.5035%;
+        top: 3.3688%;
+        bottom: 3.3688%;
+        overflow: hidden;
+        border-radius: calc(var(--width) * 0.016166281755196);
+        pointer-events: all;
+      }
+
+      .frame {
+        width: 100%;
+        position: relative;
+        top: 0;
+        line-height: 0;
+      }
+    `;let t=this.attachShadow({mode:`open`});this.getAttribute(`nonce`)&&e.setAttribute(`nonce`,this.getAttribute(`nonce`));let n=this.getAttribute(`mode`)??`light`,r=a;n===`dark`&&(r=r.replace(/#0D0D0E/g,`#ffffff`)),t.appendChild(e),t.innerHTML+=r}connectedCallback(){new ResizeObserver(this.resetWidth.bind(this)).observe(this),this.resetWidth(),this.setAttribute(`rendered`,``)}resetWidth(){this.style.setProperty(`--width`,`${this.clientWidth}px`)}};typeof window<`u`&&window.customElements&&!window.customElements.get(`ipad-air-13`)&&window.customElements.define(`ipad-air-13`,s);var c=`
+<div class="container">
+  <div class="screenshot">
+    <slot />
+  </div>
+  <div class="frame">
+    <svg width="100%" viewBox="0 0 864 1342" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Power & volume buttons -->
+    <rect x="857" y="160" width="6" height="56" rx="2" fill="url(#atab_button)"/>
+    <rect x="857" y="250" width="6" height="110" rx="2" fill="url(#atab_button)"/>
+    <rect x="861.6" y="162" width="0.8" height="52" rx="0.4" fill="white" fill-opacity="0.25"/>
+    <rect x="861.6" y="252" width="0.8" height="106" rx="0.4" fill="white" fill-opacity="0.25"/>
+    <!-- Enclosure -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M43 3C20.9086 3 3 20.9086 3 43V1299C3 1321.09 20.9086 1339 43 1339H819C841.091 1339 859 1321.09 859 1299V43C859 20.9086 841.091 3 819 3H43ZM43 31C36.3726 31 31 36.3726 31 43V1299C31 1305.63 36.3726 1311 43 1311H819C825.627 1311 831 1305.63 831 1299V43C831 36.3726 825.627 31 819 31H43Z" fill="url(#atab_body)"/>
+    <g filter="url(#atab_blur05)">
+      <rect x="3.6" y="3.6" width="854.8" height="1334.8" rx="39.4" stroke="white" stroke-opacity="0.18" stroke-width="1"/>
+    </g>
+    <!-- Front glass with display cut-out -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M43 7C23.1178 7 7 23.1178 7 43V1299C7 1318.88 23.1178 1335 43 1335H819C838.882 1335 855 1318.88 855 1299V43C855 23.1178 838.882 7 819 7H43ZM43 31C36.3726 31 31 36.3726 31 43V1299C31 1305.63 36.3726 1311 43 1311H819C825.627 1311 831 1305.63 831 1299V43C831 36.3726 825.627 31 819 31H43Z" fill="#070708"/>
+    <rect x="7.5" y="7.5" width="847" height="1327" rx="35.5" stroke="#1A1A1D" stroke-width="1"/>
+    <rect x="30.5" y="30.5" width="801" height="1281" rx="12.5" stroke="#000000" stroke-width="1"/>
+    <!-- Front camera -->
+    <circle cx="432" cy="19" r="4.6" fill="#0E0B0F"/>
+    <circle cx="432" cy="19" r="2.8" fill="#161424"/>
+    <circle cx="432" cy="19" r="1.6" fill="#0F0F2A"/>
+    <circle cx="432.6" cy="18.4" r="0.6" fill="#393752"/>
+    <!-- Status bar -->
+    <text x="51" y="50" font-family="Roboto, 'Google Sans', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1C1B1F">9:41<tspan dx="6" font-weight="400">Tue, Jan 9</tspan></text>
+    <g transform="translate(776 37) scale(0.65)">
+    <path d="M12.01 21.49L23.64 7C23.19 6.66 18.71 3 12 3C5.28 3 0.81 6.66 0.36 7L11.99 21.49L12 21.5L12.01 21.49Z" fill="#1C1B1F"/>
+    </g>
+    <g transform="translate(800 37) scale(0.65)">
+    <path d="M15.67 4H14V2H10V4H8.33C7.6 4 7 4.6 7 5.33V20.66C7 21.4 7.6 22 8.33 22H15.66C16.4 22 17 21.4 17 20.67V5.33C17 4.6 16.4 4 15.67 4Z" fill="#1C1B1F"/>
+    </g>
+    <defs>
+    <linearGradient id="atab_body" x1="3" y1="3" x2="859" y2="1339" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#4A4B4F"/>
+    <stop offset="0.35" stop-color="#2E2F32"/>
+    <stop offset="0.65" stop-color="#38393C"/>
+    <stop offset="1" stop-color="#232326"/>
+    </linearGradient>
+    <linearGradient id="atab_button" x1="863" y1="0" x2="857" y2="0" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#5A5B5F"/>
+    <stop offset="0.5" stop-color="#36373A"/>
+    <stop offset="1" stop-color="#1E1E20"/>
+    </linearGradient>
+    <filter id="atab_blur05" x="0" y="0" width="864" height="1342" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feGaussianBlur stdDeviation="0.5"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+</div>
+`,l=typeof window<`u`&&window?.HTMLElement,u=class extends l{constructor(){super();let e=document.createElement(`style`);e.innerHTML=`
+      :host {
+        display: inline-block;
+        pointer-events: none;
+
+        --width: auto;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      .screenshot {
+        position: absolute;
+        left: 3.4722%;
+        right: 3.7037%;
+        top: 2.2355%;
+        bottom: 2.2355%;
+        overflow: hidden;
+        border-radius: calc(var(--width) * 0.015046296296296);
+        pointer-events: all;
+      }
+
+      .frame {
+        width: 100%;
+        position: relative;
+        top: 0;
+        line-height: 0;
+      }
+    `;let t=this.attachShadow({mode:`open`});this.getAttribute(`nonce`)&&e.setAttribute(`nonce`,this.getAttribute(`nonce`));let n=this.getAttribute(`mode`)??`light`,r=c;n===`dark`&&(r=r.replace(/#1C1B1F/g,`#ffffff`)),t.appendChild(e),t.innerHTML+=r}connectedCallback(){new ResizeObserver(this.resetWidth.bind(this)).observe(this),this.resetWidth(),this.setAttribute(`rendered`,``)}resetWidth(){this.style.setProperty(`--width`,`${this.clientWidth}px`)}};typeof window<`u`&&window.customElements&&!window.customElements.get(`android-tablet`)&&window.customElements.define(`android-tablet`,u)})();var e=`<p>This component draws a smartphone frame around any HTML.</p>`;document.body.addEventListener(`keydown`,t=>{if(t.key!==`f`)return;let n=document.getElementById(`android-content`);if(!n)return;let r=n.innerHTML;n.innerHTML=e,e=r,t.preventDefault()},!1),(()=>{var e={800:(e,t,n)=>{n.d(t,{Z:()=>s});var r=n(15),i=n.n(r),a=n(645),o=n.n(a)()(i());o.push([e.id,`pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1e1e1e;color:#dcdcdc}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-symbol{color:#569cd6}.hljs-link{color:#569cd6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4ec9b0}.hljs-class,.hljs-number{color:#b8d7a3}.hljs-meta .hljs-string,.hljs-string{color:#d69d85}.hljs-regexp,.hljs-template-tag{color:#9a5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#dcdcdc}.hljs-comment,.hljs-quote{color:#57a64a;font-style:italic}.hljs-doctag{color:#608b4e}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-tag{color:#9b9b9b}.hljs-template-variable,.hljs-variable{color:#bd63c5}.hljs-attr,.hljs-attribute{color:#9cdcfe}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#d7ba7d}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}.x-ray__toggle{cursor:pointer}.x-ray__toggle:before{content:" ";display:inline-block;border-top:5px solid rgba(0,0,0,0);border-bottom:5px solid rgba(0,0,0,0);border-left:5px solid currentColor;vertical-align:middle;margin-right:.7rem;transform:translate(5px, -1px);transition:transform .2s ease-out}.x-ray__toggle.x-ray__toggle--active:before{transform:rotate(90deg) translate(-1px, -4px)}.x-ray__code-container{max-height:0;overflow:hidden;transition:max-height .2s ease-out}.x-ray__code-container--visible{max-height:1000px;transition:max-height .15s ease-in}.x-ray__code{margin-bottom:0;padding:7px}`,``,{version:3,sources:[`webpack://./node_modules/highlight.js/scss/vs2015.scss`,`webpack://./src/index.scss`],names:[],mappings:`AAAA,cAAA,aAAA,CAAA,eAAA,CAAA,WAAA,CAAA,UAAA,eAAA,CAAA,MAAA,kBAAA,CAAA,aAAA,CAAA,oDAAA,aAAA,CAAA,WAAA,aAAA,CAAA,yBAAA,CAAA,0BAAA,aAAA,CAAA,yBAAA,aAAA,CAAA,qCAAA,aAAA,CAAA,gCAAA,aAAA,CAAA,kEAAA,aAAA,CAAA,0BAAA,aAAA,CAAA,iBAAA,CAAA,aAAA,aAAA,CAAA,8CAAA,aAAA,CAAA,uCAAA,aAAA,CAAA,2BAAA,aAAA,CAAA,cAAA,UAAA,CAAA,eAAA,iBAAA,CAAA,aAAA,eAAA,CAAA,iHAAA,aAAA,CAAA,eAAA,wBAAA,CAAA,oBAAA,CAAA,UAAA,CAAA,eAAA,qBAAA,CAAA,oBAAA,CAAA,UAAA,CCEA,eACE,cAAA,CAEA,sBACE,WAAA,CACA,oBAAA,CAEA,kCAAA,CACA,qCAAA,CACA,kCAAA,CAEA,qBAAA,CACA,kBAAA,CACA,8BAAA,CAEA,iCAAA,CAIA,4CACE,6CAAA,CAKN,uBACE,YAAA,CACA,eAAA,CACA,kCAAA,CAGF,gCACE,iBAAA,CACA,kCAAA,CAGF,aACE,eAAA,CACA,WAAA`,sourcesContent:[`pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1e1e1e;color:#dcdcdc}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-symbol{color:#569cd6}.hljs-link{color:#569cd6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4ec9b0}.hljs-class,.hljs-number{color:#b8d7a3}.hljs-meta .hljs-string,.hljs-string{color:#d69d85}.hljs-regexp,.hljs-template-tag{color:#9a5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#dcdcdc}.hljs-comment,.hljs-quote{color:#57a64a;font-style:italic}.hljs-doctag{color:#608b4e}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-tag{color:#9b9b9b}.hljs-template-variable,.hljs-variable{color:#bd63c5}.hljs-attr,.hljs-attribute{color:#9cdcfe}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#d7ba7d}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}`,`@import '~highlight.js/scss/vs2015';
 
 .x-ray__toggle {
   cursor: pointer;
